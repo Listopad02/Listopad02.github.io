@@ -1,0 +1,16 @@
+.result {
+    margin: 51px 0 0 47px;
+}
+.result-title__header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #575757;
+    margin: 0 0 8px 0;
+}
+.result-value__paragraph {
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    margin: 0;
+}

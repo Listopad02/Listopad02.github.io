@@ -1,0 +1,27 @@
+.leasing-title__header {
+    width: 753px;
+    height: 98px;
+    font-size: 54px;
+    line-height: 90%;
+    font-weight: 900;
+    color: #111111;
+    margin: 213px 0 76px 47px;
+}
+.leasing-inputs {
+    display: flex;
+}
+.leasing-result {
+    display: flex;
+}
+.leasing-inputs__container-button {
+    width: 426px;
+    height: 68px;
+    background: #FF9514;
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    border: none;
+    margin: 51px 0 0 47px;
+}
