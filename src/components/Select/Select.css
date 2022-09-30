@@ -12,18 +12,22 @@
     color: #575757;
 }
 .select-range__number {
-    width: 427px;
+    width: 402px;
     height: 68px;
     background: #F3F3F4;
     border: none;
     border-radius: 16px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #575757;
+    padding-left: 24px;
 }
 .select-range__number::placeholder {
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
     color: #575757;
-    padding-left: 24px;
 }
 .select-range__number:focus {
     outline: none;
@@ -31,6 +35,8 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    height: 70px;
+    width: 427px;
     border: 2px solid #F3F3F4;
 }
 .select-range__number::-webkit-outer-spin-button,
