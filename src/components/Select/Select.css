@@ -11,6 +11,9 @@
     line-height: 20px;
     color: #575757;
 }
+.select-range {
+    position: relative;
+}
 .select-range__number {
     width: 402px;
     height: 68px;
@@ -44,7 +47,20 @@
     -webkit-appearance: none;
     margin: 0;
 }
+.select-range__unit {
+    position: absolute;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    top: 16px;
+    right: 16px;
+    color: #575757;
+}
 .select-range__range {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 379px;
     height: 2px;
     margin-left: 24px;

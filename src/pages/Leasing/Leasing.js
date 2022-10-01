@@ -4,11 +4,12 @@ import Result from '../../components/Result/Result'
 import "./Leasing.css"
 
 const Leasing = () => {
-  const [price, setPrice] = useState(0)
-  const [contribution, setСontribution] = useState(0)
-  const [term, setTerm] = useState(0)
+  const [price, setPrice] = useState(1000000)
+  const [contribution, setСontribution] = useState(10)
+  const [term, setTerm] = useState(1)
   const [summ, setSumm] = useState(0)
   const [month, setMonth] = useState(0)
+  const initialFee = Math.round(contribution / 100 * price)
 
   return (
     <div>
@@ -19,17 +20,39 @@ const Leasing = () => {
 
             <div className="leasing-inputs">
               <div className="leasing-inputs__container">
-                <Select header="Стоимость автомобиля" state={price} setState={setPrice} />
-                <Result header="Сумма договора лизинга" result={summ} />
+                <Select header="Стоимость автомобиля" 
+                        state={price} 
+                        setState={setPrice} 
+                        unit="₽"
+                        min={1000000}
+                        max={6000000}
+                        calculate={false} />
+                <Result header="Сумма договора лизинга" 
+                        contribution={contribution}
+                        term={term} />
               </div>
 
               <div className="leasing-inputs__container">
-                <Select header="Первоначальный взнос" state={contribution} setState={setСontribution} />
-                <Result header="Ежемесячный платеж от" result={month} />
+                <Select header="Первоначальный взнос" 
+                        state={contribution} 
+                        setState={setСontribution}
+                        unit={contribution + "%"}
+                        min={10}
+                        max={60}
+                        calculate={initialFee} />
+                <Result header="Ежемесячный платеж от"
+                        price={price}
+                        contribution={contribution} />
               </div>
 
               <div className="leasing-inputs__container">
-                <Select header="Срок лизинга" state={term} setState={setTerm} />
+                <Select header="Срок лизинга" 
+                        state={term} 
+                        setState={setTerm} 
+                        unit="мес." 
+                        min={1}
+                        max={60}
+                        calculate={false} />
                 <button className="leasing-inputs__container-button">Оставить заявку</button>
               </div>
             </div>
