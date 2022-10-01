@@ -1,7 +1,7 @@
 import React, { memo, useCallback } from 'react'
 import "./Select.css"
 
-const Select = ({ header, state, setState, unit, min, max, calculate }) => {
+const Select = ({ header, state, setState, unit, min, max, calculate, contribution, price }) => {
 
   const changeHandler = useCallback((e) => { 
     if (+e.target.value > +e.target.max) {
