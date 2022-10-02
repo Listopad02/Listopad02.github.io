@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Result.css"
 
-const Result = ({ header, price, contribution, term, month, deal }) => {
-  const dealAmount = term * month + contribution
+const Result = ({ header, price, contribution, term, deal }) => {
   const monthPay = Math.round((price - contribution) * ((0.035 * Math.pow((1 + 0.035), term)) / (Math.pow((1 + 0.035), term) - 1)))
+  const dealAmount = term * monthPay + contribution
 
   return (
     <div className='result'>

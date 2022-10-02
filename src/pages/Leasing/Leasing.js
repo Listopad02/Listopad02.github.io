@@ -7,8 +7,6 @@ const Leasing = () => {
   const [price, setPrice] = useState(1000000)
   const [contribution, setСontribution] = useState(10)
   const [term, setTerm] = useState(1)
-  const [month, setMonth] = useState(931500)
-  const [summ, setSumm] = useState(1031500)
   const initialFee = Math.round(contribution / 100 * price)
 
   return (
@@ -28,11 +26,8 @@ const Leasing = () => {
                         max={6000000}
                         calculate={false} />
                 <Result header="Сумма договора лизинга"
-                        state={summ}
-                        setState={setSumm} 
                         contribution={initialFee}
                         term={term}
-                        month={month}
                         deal={true} />
               </div>
 
@@ -45,8 +40,6 @@ const Leasing = () => {
                         max={60}
                         calculate={initialFee} />
                 <Result header="Ежемесячный платеж от"
-                        state={month}
-                        setState={setMonth}
                         price={price}
                         contribution={initialFee}
                         term={term}
