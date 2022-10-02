@@ -25,3 +25,16 @@
     border: none;
     margin: 51px 0 0 47px;
 }
+.leasing-inputs__container-button:hover {
+    background: #111111;
+    transition: background .3s ease-in;
+    cursor: pointer;
+}
+.leasing-inputs__container-button:active {
+    background: #575757;
+    transition: background .1s ease-in-out;
+}
+.leasing-inputs__container-button:disabled {
+    background: rgba(255, 149, 20, 0.4);
+    transition: background .1s ease-in-out;
+}

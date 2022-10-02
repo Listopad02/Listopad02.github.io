@@ -1,11 +1,13 @@
 import React, { memo, useCallback } from 'react'
 import "./Select.css"
 
-const Select = ({ header, state, setState, unit, min, max, calculate, contribution, price }) => {
+const Select = ({ header, state, setState, unit, min, max, calculate, step }) => {
 
   const changeHandler = useCallback((e) => { 
     if (+e.target.value > +e.target.max) {
       setState(e.target.max)
+    } else if (+e.target.value < 0) {
+      setState(e.target.min)
     } else {
       setState(e.target.value)
     }
@@ -42,6 +44,7 @@ const Select = ({ header, state, setState, unit, min, max, calculate, contributi
                    name="range" 
                    min={min}
                    max={max}
+                   step={step ? step : 1}
                    value={state}
                    onChange={(e) => changeHandler(e)} />
         </div>

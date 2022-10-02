@@ -12,7 +12,7 @@ const Result = ({ header, price, contribution, term, deal }) => {
         </div>
         <div className="result-value">
             <p className="result-value__paragraph">
-                { deal ? dealAmount : monthPay } ₽
+                { deal ? dealAmount.toLocaleString('ru-RU') : monthPay.toLocaleString('ru-RU') } ₽
             </p>
         </div>
     </div>

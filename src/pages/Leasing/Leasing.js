@@ -24,8 +24,10 @@ const Leasing = () => {
                         unit="₽"
                         min={1000000}
                         max={6000000}
+                        step={100000}
                         calculate={false} />
                 <Result header="Сумма договора лизинга"
+                        price={price}
                         contribution={initialFee}
                         term={term}
                         deal={true} />
@@ -53,6 +55,7 @@ const Leasing = () => {
                         unit="мес." 
                         min={1}
                         max={60}
+                        step={1}
                         calculate={false} />
                 <button className="leasing-inputs__container-button">Оставить заявку</button>
               </div>
