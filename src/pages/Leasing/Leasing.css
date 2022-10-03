@@ -1,11 +1,20 @@
+@font-face {
+    font-family: Nekst-Black;
+    src: url("../../fonts/Nekst-Black.eot") format("eot");
+    src: url("../../fonts/Nekst-Black.ttf") format("ttf");
+    src: url("../../fonts/Nekst-Black.woff") format("woff");
+}
+
 .leasing-title__header {
-    width: 753px;
+    width: 100%;
+    max-width: 753px;
     height: 98px;
+    font-family: Nekst-Black, Tahoma, sans-serif;
     font-size: 54px;
     line-height: 90%;
     font-weight: 900;
     color: #111111;
-    margin: 213px 0 76px 47px;
+    margin: 213px 0 32px 47px;
 }
 .leasing-inputs {
     display: flex;
@@ -19,6 +28,7 @@
     background: #FF9514;
     border-radius: 40px;
     color: #FFFFFF;
+    font-family: Nekst-Black, Tahoma, sans-serif;
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
@@ -27,7 +37,7 @@
 }
 .leasing-inputs__container-button:hover {
     background: #111111;
-    transition: background .3s ease-in;
+    transition: background .2s ease-in;
     cursor: pointer;
 }
 .leasing-inputs__container-button:active {
@@ -36,5 +46,74 @@
 }
 .leasing-inputs__container-button:disabled {
     background: rgba(255, 149, 20, 0.4);
-    transition: background .1s ease-in-out;
+}
+.leasing-results {
+    display: flex;
+}
+.leasing-inputs__block {
+    width: 100%;
+    min-width: 428px;
+    max-width: 428px;
+    margin: 51px 0 0 47px;
+}
+.leasing-inputs__block-button {
+    margin: auto 0;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .leasing-title__header {
+        max-width: 700px;
+        margin: 100px 0 44px 47px;
+    }
+    .leasing-inputs {
+        display: block;
+    }
+    .leasing-inputs__block {
+        min-width: 279px;
+        max-width: 279px;
+        margin: 51px 50px 0 47px;
+    }
+    .leasing-results {
+        flex-wrap: wrap;
+    }
+    .result {
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+    }
+    .leasing-inputs__container-button {
+        margin: 44px 0 50px 47px;
+        width: 345px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .leasing-title__header {
+        max-width: 696px;
+        margin: 64px 0 44px 36px;
+    }
+    .leasing-inputs {
+        display: block;
+    }
+    .leasing-inputs__block {
+        min-width: 279px;
+        max-width: 279px;
+        margin: 51px 38px 0 47px;
+    }
+    .leasing-results {
+        flex-wrap: wrap;
+    }
+    .leasing-inputs__container-button {
+        margin: 44px 0 50px 47px;
+        width: 345px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .leasing-title__header {
+        font-size: 34px;
+        margin: 44px 0 32px 21px;
+    }
+    .leasing-inputs__container-button {
+        font-size: 22px;
+    }
 }

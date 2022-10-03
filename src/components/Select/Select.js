@@ -1,12 +1,12 @@
 import React, { memo, useCallback } from 'react'
 import "./Select.css"
 
-const Select = ({ header, state, setState, unit, min, max, calculate, step }) => {
+const Select = ({ header, state, setState, unit, min, max, calculate, step, disabled, setDisabled }) => {
 
   const changeHandler = useCallback((e) => { 
     if (+e.target.value > +e.target.max) {
       setState(e.target.max)
-    } else if (+e.target.value < 0) {
+    } else if (+e.target.value <= 0) {
       setState(e.target.min)
     } else {
       setState(e.target.value)
@@ -18,6 +18,10 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step }) =>
       setState(e.target.min)
     }
   }, [setState])
+
+  const handleDisabled = () => {
+    if (!disabled) setDisabled(true)
+  }
 
   return (
     <div className='select'>
@@ -37,6 +41,10 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step }) =>
                    }}
                    onBlur={(e) => {
                     changeHandlerBlur(e)
+                    if (disabled) setDisabled(false)
+                   }}
+                   onFocus={() => {
+                    handleDisabled()
                    }} />
             <p className='select-range__unit'>{ unit }</p>
             <input type="range" 
