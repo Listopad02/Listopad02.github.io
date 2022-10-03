@@ -27,3 +27,12 @@
     color: #575757;
     margin: 0;
 }
+
+@media screen and (max-width: 609px) and (min-width: 320px) {
+    .result-title__header {
+        font-size: 14px;
+    }
+    .result-value__paragraph {
+        font-size: 22px;
+    }
+}

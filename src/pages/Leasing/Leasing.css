@@ -49,6 +49,7 @@
 }
 .leasing-results {
     display: flex;
+    flex-wrap: wrap;
 }
 .leasing-inputs__block {
     width: 100%;
@@ -66,54 +67,46 @@
         max-width: 700px;
         margin: 100px 0 44px 47px;
     }
-    .leasing-inputs {
-        display: block;
-    }
     .leasing-inputs__block {
         min-width: 279px;
         max-width: 279px;
         margin: 51px 50px 0 47px;
     }
-    .leasing-results {
-        flex-wrap: wrap;
-    }
-    .result {
-        width: 100%;
-        max-width: 480px;
-        margin: 0;
-    }
-    .leasing-inputs__container-button {
-        margin: 44px 0 50px 47px;
-        width: 345px;
-    }
 }
-@media screen and (max-width: 768px) and (min-width: 321px) {
+@media screen and (max-width: 768px) and (min-width: 610px) {
     .leasing-title__header {
-        max-width: 696px;
+        max-width: 700px;
         margin: 64px 0 44px 36px;
-    }
-    .leasing-inputs {
-        display: block;
     }
     .leasing-inputs__block {
         min-width: 279px;
         max-width: 279px;
         margin: 51px 38px 0 47px;
     }
-    .leasing-results {
-        flex-wrap: wrap;
-    }
-    .leasing-inputs__container-button {
-        margin: 44px 0 50px 47px;
-        width: 345px;
-    }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 609px) and (min-width: 320px) {
     .leasing-title__header {
         font-size: 34px;
+        width: auto;
+        height: auto;
         margin: 44px 0 32px 21px;
+    }
+    .leasing-inputs__block {
+        min-width: 279px;
+        max-width: 279px;
+        margin: 25px 0 0 20px;
     }
     .leasing-inputs__container-button {
         font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .leasing-inputs {
+        display: block;
+    }
+    .leasing-inputs__container-button {
+        width: 280px;
+        margin: 32px 0 0 20px;
     }
 }
