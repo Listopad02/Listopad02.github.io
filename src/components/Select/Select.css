@@ -124,6 +124,12 @@ input {
 
 
 @media screen and (max-width: 1439px) and (min-width: 1120px) {
+    .select-range__number {
+        margin-right: 48px;
+    }
+    .select-range__number:focus {
+        margin-right: 48px;
+    }
     .select-header {
         margin: 44px 0 24px 0;
     }
