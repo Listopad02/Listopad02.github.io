@@ -63,7 +63,7 @@
 }
 
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+@media screen and (max-width: 1439px) and (min-width: 1120px) {
     .leasing-title__header {
         max-width: 700px;
         margin: 100px 0 44px 47px;
@@ -74,7 +74,7 @@
         margin: 51px 50px 0 47px;
     }
 }
-@media screen and (max-width: 768px) and (min-width: 610px) {
+@media screen and (max-width: 1119px) and (min-width: 768px) {
     .leasing-title__header {
         max-width: 700px;
         margin: 64px 0 44px 36px;
@@ -85,7 +85,7 @@
         margin: 51px 38px 0 47px;
     }
 }
-@media screen and (max-width: 609px) {
+@media screen and (max-width: 767px) {
     .leasing-title__header {
         font-size: 34px;
         width: auto;
@@ -102,7 +102,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1119px) {
     .leasing-inputs {
         display: block;
     }

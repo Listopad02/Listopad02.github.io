@@ -28,7 +28,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 609px) {
+@media screen and (max-width: 767px) {
     .result-title__header {
         font-size: 14px;
     }
