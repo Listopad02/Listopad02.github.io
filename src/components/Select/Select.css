@@ -10,7 +10,9 @@
     src: url("../../fonts/Nekst-SemiBold.ttf") format("ttf");
     src: url("../../fonts/Nekst-SemiBold.woff") format("woff");
 }
-
+input {
+    box-sizing: border-box;
+}
 .select {
     margin-left: 32px;
 }
@@ -24,13 +26,13 @@
     font-size: 16px;
     line-height: 20px;
     color: #575757;
-    margin: 0 0 24px 0;
+    margin: 32px 0 24px 0;
 }
 .select-range {
     position: relative;
 }
 .select-range__number {
-    width: 402px;
+    width: 427px;
     height: 66px;
     background: #F3F3F4;
     border: none;
@@ -54,7 +56,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    height: 70px;
+    height: 66px;
     width: 427px;
     border: 2px solid #F3F3F4;
 }
@@ -79,6 +81,19 @@
 }
 .disabled {
     opacity: .7;
+}
+.calculate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 70px;
+    height: 54px;
+    background: rgba(224, 224, 224, .4);
+    border-radius: 16px;
+    font-size: 20px;
 }
 .select-range__range {
     position: absolute;
@@ -117,7 +132,7 @@
         margin: 44px 0 24px 0;
     }
     .select-range__range {
-        width: 97%;
+        width: 94%;
     }
     .select:first-child {
         margin-left: 47px;
@@ -150,13 +165,20 @@
         font-size: 14px;
     }
     .select-range__range {
-        width: 93%;
+        width: 90%;
     }
     .select:first-child {
         margin-left: 20px;
     }
     .select-range__unit {
         font-size: 22px;
+        top: 12px;
+    }
+    .calculate {
+        top: 6px;
+        right: 6px;
+        width: 67px;
+        height: 48px;
     }
 }
 

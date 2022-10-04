@@ -19,6 +19,15 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step, disa
     }
   }, [setState])
 
+  const defineClassName = () => {
+    let className = 'select-range__unit'
+
+    if (disabled) className += ' disabled'
+    else if (calculate) className += ' calculate'
+
+    return className
+  }
+
   return (
     <div className='select'>
         <div className="select-title">
@@ -40,7 +49,7 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step, disa
                     changeHandlerBlur(e)
                     if (disabled) setDisabled(false)
                    }} />
-            <p className={disabled ? "select-range__unit disabled" : 'select-range__unit'} disabled={disabled}>{ unit }</p>
+            <div className={defineClassName()} disabled={disabled} calculate={calculate}>{ unit }</div>
             <input type="range" 
                    className="select-range__range" 
                    name="range" 
