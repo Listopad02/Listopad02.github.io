@@ -128,6 +128,10 @@ input {
         width: 100%;
         margin-right: 48px;
     }
+    .select-range__number:focus {
+        width: 100%;
+        margin-right: 48px;
+    }
     .select-header {
         margin: 44px 0 24px 0;
     }
@@ -143,6 +147,10 @@ input {
         width: 100%;
         margin-right: 36px;
     }
+    .select-range__number:focus {
+        width: 100%;
+        margin-right: 36px;
+    }
     .select-header {
         margin: 44px 0 24px 0;
     }
@@ -155,6 +163,12 @@ input {
 }
 @media screen and (max-width: 609px) and (min-width: 320px) {
     .select-range__number {
+        width: 100%;
+        margin-right: 20px;
+        font-size: 22px;
+        height: 58px;
+    }
+    .select-range__number:focus {
         width: 100%;
         margin-right: 20px;
         font-size: 22px;
@@ -180,8 +194,4 @@ input {
         width: 67px;
         height: 48px;
     }
-}
-
-@media screen and (max-width: 1024px) {
-
 }
