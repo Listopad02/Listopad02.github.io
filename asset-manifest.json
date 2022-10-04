@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cars-leasing/static/css/main.fe896f02.css",
+    "main.css": "/cars-leasing/static/css/main.a14c8536.css",
     "main.js": "/cars-leasing/static/js/main.10955d11.js",
     "static/js/787.92926b18.chunk.js": "/cars-leasing/static/js/787.92926b18.chunk.js",
     "static/media/Nekst-SemiBold.eot": "/cars-leasing/static/media/Nekst-SemiBold.533603ee27c76da054e7.eot",
@@ -10,12 +10,12 @@
     "static/media/Nekst-SemiBold.woff": "/cars-leasing/static/media/Nekst-SemiBold.98ae396a1e18eead2a95.woff",
     "static/media/Gilroy-Light.woff": "/cars-leasing/static/media/Gilroy-Light.368f09f56e89b3fe11c7.woff",
     "index.html": "/cars-leasing/index.html",
-    "main.fe896f02.css.map": "/cars-leasing/static/css/main.fe896f02.css.map",
+    "main.a14c8536.css.map": "/cars-leasing/static/css/main.a14c8536.css.map",
     "main.10955d11.js.map": "/cars-leasing/static/js/main.10955d11.js.map",
     "787.92926b18.chunk.js.map": "/cars-leasing/static/js/787.92926b18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe896f02.css",
+    "static/css/main.a14c8536.css",
     "static/js/main.10955d11.js"
   ]
 }
