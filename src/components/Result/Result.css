@@ -6,9 +6,9 @@
 }
 @font-face {
     font-family: Nekst-Black;
-    src: url("../../fonts/Nekst-Black.eot") format("eot");
-    src: url("../../fonts/Nekst-Black.ttf") format("ttf");
-    src: url("../../fonts/Nekst-Black.woff") format("woff");
+    src: url("../../fonts/Nekst-SemiBold.eot") format("eot");
+    src: url("../../fonts/Nekst-SemiBold.ttf") format("ttf");
+    src: url("../../fonts/Nekst-SemiBold.woff") format("woff");
 }
 
 .result-title__header {

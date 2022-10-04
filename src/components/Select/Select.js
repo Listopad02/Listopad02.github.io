@@ -19,10 +19,6 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step, disa
     }
   }, [setState])
 
-  const handleDisabled = () => {
-    if (!disabled) setDisabled(true)
-  }
-
   return (
     <div className='select'>
         <div className="select-title">
@@ -36,17 +32,15 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step, disa
                    max={max}
                    value={calculate ? calculate : state}
                    readOnly={calculate ? true : false}
+                   disabled={disabled}
                    onChange={(e) => {
                     changeHandler(e)
                    }}
                    onBlur={(e) => {
                     changeHandlerBlur(e)
                     if (disabled) setDisabled(false)
-                   }}
-                   onFocus={() => {
-                    handleDisabled()
                    }} />
-            <p className='select-range__unit'>{ unit }</p>
+            <p className={disabled ? "select-range__unit disabled" : 'select-range__unit'} disabled={disabled}>{ unit }</p>
             <input type="range" 
                    className="select-range__range" 
                    name="range" 
@@ -54,6 +48,7 @@ const Select = ({ header, state, setState, unit, min, max, calculate, step, disa
                    max={max}
                    step={step ? step : 1}
                    value={state}
+                   disabled={disabled}
                    onChange={(e) => changeHandler(e)} />
         </div>
     </div>
