@@ -85,7 +85,7 @@
         margin: 51px 38px 0 47px;
     }
 }
-@media screen and (max-width: 609px) and (min-width: 320px) {
+@media screen and (max-width: 609px) {
     .leasing-title__header {
         font-size: 34px;
         width: auto;
